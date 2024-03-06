@@ -22,9 +22,8 @@ help them understand the crisis, guide their decision with truth. help them rest
 The dataset comprises of over 60,000 unique records.
 
 ### Data model
-The database md_water_services includes more than 60 000 unique records and 43 columns. The data model, including the column names, data types and feature descriptions.
+The database md_water_services includes more than 60 000 unique records and 43 columns. The data model, including the column names, data types and feature descriptions. [md_water_services](https://github.com/Jamaderibigbe/Maji-Ndogu-SQL/blob/main/md_water_services.sql)
 
-#### Table 1
 #### employee table
 | Column name               | Description                                     | Data Type      |
 | :------------------------ | :---------------------------------------------- | :------------- |
