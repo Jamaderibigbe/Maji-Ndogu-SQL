@@ -26,37 +26,72 @@ The database md_water_services includes more than 60 000 unique records and 43 c
 
 #### Table 1
 #### employee table
-| Column name               | Description                                   | Data Type      |
-| :---------------------- | :---------------------------------------------- | :------------- |
-| assigned_employee_id    | Unique ID assigned to each employee.            |  INT           |
-| employee_name           | Name of the employee.                           | VARCHAR(255)   |
-| phone_number            | Contact number of the employee.                 | VARCHAR(15)    |
-| email                   | Email address of the employee.                  | VARCHAR(255)   |
-| address                 | Residential address of the employee.            | VARCHAR(255)   |
-| town_name               | Name of the town where the employee resides.    | VARCHAR(255)   |
-| province_name           | Name of the province where the employee resides.| VARCHAR(255)   |
-| position                | Position or job title of the employee.          | VARCHAR(255)   |
+| Column name               | Description                                     | Data Type      |
+| :------------------------ | :---------------------------------------------- | :------------- |
+| assigned_employee_id      | Unique ID assigned to each employee.            |  INT           |
+| employee_name             | Name of the employee.                           | VARCHAR(255)   |
+| phone_number              | Contact number of the employee.                 | VARCHAR(15)    |
+| email                     | Email address of the employee.                  | VARCHAR(255)   |
+| address                   | Residential address of the employee.            | VARCHAR(255)   |
+| town_name                 | Name of the town where the employee resides.    | VARCHAR(255)   |
+| province_name             | Name of the province where the employee resides.| VARCHAR(255)   |
+| position                  | Position or job title of the employee.          | VARCHAR(255)   |
 
 #### global_water_access table
 | Column name               | Description                                                         | Data Type      |
-| :---------------------- | :---------------------------------------------------------------------| :------------- |
-| name                    | The country or area name.                                             | VARCHAR(255)   |
-| region                  | Geographical region.                                                  | VARCHAR(255)   | 
-| year                    | Year of the data record.                                              | INT            |
-| pop_n                   | The national population size estimate in thousands.                   | FLOAT          |
-| pop_u                   | The urban population share estimate in percentage points (%).         | FLOAT          |
-| wat_bas_n               | The estimated national share of people with atleast basic service (%).| FLOAT          |
-| wat_lim_n               | The estimated national share of people with limited service (%).      | FLOAT          |
-| wat_unimp_n             | The estimated national share of people with unimproved service (%).   | FLOAT          |
-| wat_sur_n               | The estimated national share of people with surface service (%).      | FLOAT          |
-| wat_bas_r               | The estimated rural share of people with at least basic service (%).  | FLOAT          |
-| wat_lim_r               | The estimated rural share of people with limited service (%).         | FLOAT          |
-| wat_unimp_r             | The estimated rural share of people with unimproved service (%).      | FLOAT          |
-| wat_sur_r               | The estimated rural share of people with surface service (%).         | FLOAT          |
-| wat_bas_u               | The estimated urban share of people with at least basic service (%).  | FLOAT          |
-| wat_lim_u               | The estimated urban share of people with limited service (%).         | FLOAT          |
-| wat_unimp_u             | The estimated urban share of people with unimproved service (%).      | FLOAT          |
-| wat_sur_u               | The estimated urban share of people with surface service (%).         | FLOAT          |
+| :------------------------ | :---------------------------------------------------------------------| :------------- |
+| name                      | The country or area name.                                             | VARCHAR(255)   |
+| region                    | Geographical region.                                                  | VARCHAR(255)   | 
+| year                      | Year of the data record.                                              | INT            |
+| pop_n                     | The national population size estimate in thousands.                   | FLOAT          |
+| pop_u                     | The urban population share estimate in percentage points (%).         | FLOAT          |
+| wat_bas_n                 | The estimated national share of people with atleast basic service (%).| FLOAT          |
+| wat_lim_n                 | The estimated national share of people with limited service (%).      | FLOAT          |
+| wat_unimp_n               | The estimated national share of people with unimproved service (%).   | FLOAT          |
+| wat_sur_n                 | The estimated national share of people with surface service (%).      | FLOAT          |
+| wat_bas_r                 | The estimated rural share of people with at least basic service (%).  | FLOAT          |
+| wat_lim_r                 | The estimated rural share of people with limited service (%).         | FLOAT          |
+| wat_unimp_r               | The estimated rural share of people with unimproved service (%).      | FLOAT          |
+| wat_sur_r                 | The estimated rural share of people with surface service (%).         | FLOAT          |
+| wat_bas_u                 | The estimated urban share of people with at least basic service (%).  | FLOAT          |
+| wat_lim_u                 | The estimated urban share of people with limited service (%).         | FLOAT          |
+| wat_unimp_u               | The estimated urban share of people with unimproved service (%).      | FLOAT          |
+| wat_sur_u                 | The estimated urban share of people with surface service (%).         | FLOAT          |
+
+#### location table
+| Column name               | Description                                                | Data Type      |
+| :----------------------   | :--------------------------------------------------------- | :------------- |
+| location_id               | Unique ID assigned to each location.                       | VARCHAR(255)   |
+| address                   |Address of the location.                                    | VARCHAR(255)   |
+| province_name             | Name of the province where the location is situated.       | VARCHAR(255)   |
+| town_name                 | Name of the town where the location is situated.           | VARCHAR(255)   |
+| location_type             | Type or category of the location.                          | VARCHAR(255)   |
+
+#### visits table
+| Column name               | Description                                                             | Data Type      |
+| :----------------------   | :---------------------------------------------------------------------- | :------------- |
+| record_id                 | Unique ID assigned to each visit.                                       | INT            |
+| location_id               | ID of the location visited.                                             | VARCHAR(255)   |
+| source_id                 | ID of the water source visited.                                         | VARCHAR(510)   |
+| time_of_record            | Date and time of the visit.                                             | DATETIME       |
+| visit_count               | Number of visits made to this location.                                 | INT            |
+| time_in_queue             | Time spent by people waiting for water in aqueue at the location.       | INT            |
+| assigned_employee_id      | ID of the employee who visited the location.                            | INT            |
+
+#### water_quality table
+| Column name               | Description                                                             | Data Type      |
+| :----------------------   | :---------------------------------------------------------------------- | :------------- |
+| record_id Unique          | ID assigned to each record.                                             | INT            |
+| subjective_quality_score  | Score representing the subjective quality of the water source.          | INT            |
+| visit_count               | Number of visits made for data collection.                              | INT            |
+
+#### water_source table
+| Column name               | Description                                                             | Data Type      |
+| :----------------------   | :---------------------------------------------------------------------- | :------------- |
+| source_id                 | Unique ID assigned to each water source.                                | INT
+| type_of_water_source      | Type or category of the water source. Can be:                           |                |
+|                           |  tap_in_home, tap_in_home_broken, well,shared_tap, river.              | INT            |
+| Number_of_people_served   | Number of people served by this water source.                           | INT            |
 
 
 
