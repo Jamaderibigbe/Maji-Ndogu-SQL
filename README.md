@@ -88,9 +88,9 @@ The database md_water_services includes more than 60 000 unique records and 43 c
 #### water_source table
 | Column name               | Description                                                             | Data Type      |
 | :----------------------   | :---------------------------------------------------------------------- | :------------- |
-| source_id                 | Unique ID assigned to each water source.                                | INT
+| source_id                 | Unique ID assigned to each water source.                                | INT            |
 | type_of_water_source      | Type or category of the water source. Can be:                           |                |
-|                           |  tap_in_home, tap_in_home_broken, well,shared_tap, river.              | INT            |
+|                           |  tap_in_home, tap_in_home_broken, well,shared_tap, river.               | INT            |
 | Number_of_people_served   | Number of people served by this water source.                           | INT            |
 
 #### well_pollution table
