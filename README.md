@@ -1,2 +1,15 @@
 # Maji-Ndogu-SQL-
 we embark on the vital task of extracting insights from our extensive data. we dive into the database, understand its structure, and explore the connections between variables. Each record holds a piece of our story, waiting to be discovered. Let's uncover patterns, ask critical questions, and pave the way for data-driven solutions.
+
+#### Back story
+Maji Ndogu the Vibant heart.
+
+A nation where a mighty river flowed throuh the land, bringing Life to its children. This was once a beacon of hope. thriving communities were built around fertile land and abundance of clean water. the cities was bustling. Urban centers brimming with promise.
+Today the picture is far different. A terrible drought made clean water a luxury. every day is a struggle as people queue for hours often in vain for their shear of life's most basic necessity. A legacy of mismanagement and corruption choked off Maji Ndogu Lifeblood,
+leaving its water infrastructure in ruins. Greed blinded the government until there was nothing left.
+But Dawn follows the darkst night, the communities rose up, their voices echoed throuhout Maji Ndogu and together they brought about the dawn. This Government is guided by the principles of transparency and deficiency. They embrace a future driven by data and truth,
+their mission was clear, Restore the flow of water in Maji Ndogu. they wanted data to inform their decisions, but first they needed to see again. a sweeping water survey across provinces, towns, and countless water sources will map out Maji Ndogu thirst. 
+that's where we come in.
+
+They are assembling a diverse team, commited to innovation, driven by compasssion and fueled by science and technology. their team of Engineers, Data analyst, Surveyors, scienctists, designers, and project managers are all standing Ready. will you join us ?
+help them understand the crisis, guide their decision with truth. help them restore the flow of water to Maji Ndogu and with it life.
