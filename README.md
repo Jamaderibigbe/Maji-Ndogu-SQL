@@ -93,6 +93,15 @@ The database md_water_services includes more than 60 000 unique records and 43 c
 |                           |  tap_in_home, tap_in_home_broken, well,shared_tap, river.              | INT            |
 | Number_of_people_served   | Number of people served by this water source.                           | INT            |
 
+#### well_pollution table
+| Column name               | Description                                             | Data Type      |
+| :----------------------   | :------------------------------------------------------ | :------------- |
+| source_id                 | ID of the water source being tested for pollution.      | VARCHAR(258)   |
+| date                      | Date of the pollution test.                             | DATETIME       |
+| description               | Description of the pollution test.                      | VARCHAR(255)   |
+| pollutant_ppm             | Result of the pollution test in parts per million.      | FLOAT          |
+| biological                | Biological contamination level.                         | FLOAT          |
+| results                   | Result of the pollution test.                           | VARCHAR(255)   |
 
 
 Now, we have to load this database and thoroughly acquaint ourselves with it. Let's dive deep, explore its structure, understand the variables, and the connections between them. Each record is a chapter of their story; every query we run is a thread weaving that story together. This is a process of discovery - to uncover the patterns and nuances in their data. It's our chance to ask the right questions, to identify the pressing problems, and to set the course for their data-driven solutions.
