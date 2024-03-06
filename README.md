@@ -21,6 +21,45 @@ help them understand the crisis, guide their decision with truth. help them rest
 ### About Data
 The dataset comprises of over 60,000 unique records.
 
+### Data model
+The database md_water_services includes more than 60 000 unique records and 43 columns. The data model, including the column names, data types and feature descriptions.
+
+#### Table 1
+#### employee table
+| Column name               | Description                                   | Data Type      |
+| :---------------------- | :---------------------------------------------- | :------------- |
+| assigned_employee_id    | Unique ID assigned to each employee.            |  INT           |
+| employee_name           | Name of the employee.                           | VARCHAR(255)   |
+| phone_number            | Contact number of the employee.                 | VARCHAR(15)    |
+| email                   | Email address of the employee.                  | VARCHAR(255)   |
+| address                 | Residential address of the employee.            | VARCHAR(255)   |
+| town_name               | Name of the town where the employee resides.    | VARCHAR(255)   |
+| province_name           | Name of the province where the employee resides.| VARCHAR(255)   |
+| position                | Position or job title of the employee.          | VARCHAR(255)   |
+
+#### global_water_access table
+| Column name               | Description                                                         | Data Type      |
+| :---------------------- | :---------------------------------------------------------------------| :------------- |
+| name                    | The country or area name.                                             | VARCHAR(255)   |
+| region                  | Geographical region.                                                  | VARCHAR(255)   | 
+| year                    | Year of the data record.                                              | INT            |
+| pop_n                   | The national population size estimate in thousands.                   | FLOAT          |
+| pop_u                   | The urban population share estimate in percentage points (%).         | FLOAT          |
+| wat_bas_n               | The estimated national share of people with atleast basic service (%).| FLOAT          |
+| wat_lim_n               | The estimated national share of people with limited service (%).      | FLOAT          |
+| wat_unimp_n             | The estimated national share of people with unimproved service (%).   | FLOAT          |
+| wat_sur_n               | The estimated national share of people with surface service (%).      | FLOAT          |
+| wat_bas_r               | The estimated rural share of people with at least basic service (%).  | FLOAT          |
+| wat_lim_r               | The estimated rural share of people with limited service (%).         | FLOAT          |
+| wat_unimp_r             | The estimated rural share of people with unimproved service (%).      | FLOAT          |
+| wat_sur_r               | The estimated rural share of people with surface service (%).         | FLOAT          |
+| wat_bas_u               | The estimated urban share of people with at least basic service (%).  | FLOAT          |
+| wat_lim_u               | The estimated urban share of people with limited service (%).         | FLOAT          |
+| wat_unimp_u             | The estimated urban share of people with unimproved service (%).      | FLOAT          |
+| wat_sur_u               | The estimated urban share of people with surface service (%).         | FLOAT          |
+
+
+
 Now, we have to load this database and thoroughly acquaint ourselves with it. Let's dive deep, explore its structure, understand the variables, and the connections between them. Each record is a chapter of their story; every query we run is a thread weaving that story together. This is a process of discovery - to uncover the patterns and nuances in their data. It's our chance to ask the right questions, to identify the pressing problems, and to set the course for their data-driven solutions.
 
 As we proceed, we have to remember that every bit of information is a piece of the bigger puzzle. Every insight, no matter how small, brings us one step closer to solving the water crisis. Together, we have embarked on this journey to bring about change. Let's continue to march ahead with the same determination and resolve.
