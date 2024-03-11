@@ -106,3 +106,20 @@ The database md_water_services includes more than 60 000 unique records and 43 c
 Now, we have to load this database and thoroughly acquaint ourselves with it. Let's dive deep, explore its structure, understand the variables, and the connections between them. Each record is a chapter of their story; every query we run is a thread weaving that story together. This is a process of discovery - to uncover the patterns and nuances in their data. It's our chance to ask the right questions, to identify the pressing problems, and to set the course for their data-driven solutions.
 
 As we proceed, we have to remember that every bit of information is a piece of the bigger puzzle. Every insight, no matter how small, brings us one step closer to solving the water crisis. Together, we have embarked on this journey to bring about change. Let's continue to march ahead with the same determination and resolve.
+
+#### This project will be structured into four parts. 
+In the initial phase, we will delve into Maji Ndogo's comprehensive database, which comprises 60,000 records distributed across multiple tables. Our objective in this phase is to familiarize ourselves with the dataset's content through basic queries, enabling us to gain insights into each table's contents.
+
+The initial part will facilitate our ability to address the following question
+
+1. Get to know our data: Before we do anything else, let's take a good look at our data. We'll load up the database and pull up the first few records from each table. It's like getting to know a new city - we need to explore the lay of the land before we can start our journey.
+2. Dive into the water sources: We've got a whole table dedicated to the types of water sources in our database. Let's dig into it and
+figure out all the unique types of water sources we're dealing with.
+3. Unpack the visits to water sources: The 'visits' table in our database is like a logbook of all the trips made to different water
+sources. We need to unravel this logbook to understand the frequency and distribution of these visits. Let's identify which locations
+have been visited more than a certain number of times.
+4. Assess the quality of water sources: The quality of water sources is a pretty big deal. We'll turn to the water_quality table to
+find records where the subjective_quality_score is within a certain range and the visit_count is above a certain threshold. This
+should help us spot the water sources that are frequently visited and have a decent quality score.
+5. Investigate any pollution issues: We can't overlook the pollution status of our water sources. Let's find those water sources where
+the pollution_tests result came back as 'dirty' or 'biologically contaminated'. This will help us flag the areas that need immediate attention.
