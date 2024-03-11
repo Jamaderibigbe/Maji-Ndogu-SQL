@@ -123,3 +123,41 @@ find records where the subjective_quality_score is within a certain range and th
 should help us spot the water sources that are frequently visited and have a decent quality score.
 5. Investigate any pollution issues: We can't overlook the pollution status of our water sources. Let's find those water sources where
 the pollution_tests result came back as 'dirty' or 'biologically contaminated'. This will help us flag the areas that need immediate attention.
+
+#### Let me quickly bring you up to speed on these water source types
+
+1. River - People collect drinking water along a river. This is an open water source that millions of people use in Maji Ndogo. Water from a river has a high risk of being contaminated with biological and other pollutants, so it is the worst source of water possible.
+
+##### This is a river in the province of Sokoto:
+  ![river](https://github.com/Jamaderibigbe/Maji-Ndogu-SQL/blob/main/river.PNG)
+
+2. Well - These sources draw water from underground sources, and are commonly shared by communities. Since these are closed water
+sources, contamination is much less likely compared to a river. Unfortunately, due to the aging infrastructure and the corruption of officials in the past, many of our wells are not clean.
+
+##### This well is at 146 Okapi Road, in my home town of Yaounde:
+  ![well](https://github.com/Jamaderibigbe/Maji-Ndogu-SQL/blob/main/well.PNG)
+
+3. Shared tap - This is a tap in a public area shared by communities.
+
+##### This is a shared tap from 18 Twiga Lane, Hawassa, that serves about 2700 people:
+  ![shared tap](https://github.com/Jamaderibigbe/Maji-Ndogu-SQL/blob/main/shared%20tap.PNG)
+  
+4. Tap in home - These are taps that are inside the homes of our citizens. On average about 6 people live together in Maji Ndogo, so
+each of these taps serves about 6 people.
+
+##### This is a tap in uncle's home in the capital city, Dahabu:
+   ![tap in home](https://github.com/Jamaderibigbe/Maji-Ndogu-SQL/blob/main/tap%20in%20home.PNG)
+   
+5. Broken tap in home - These are taps that have been installed in a citizen’s home, but the infrastructure connected to that tap is not
+functional. This can be due to burst pipes, broken pumps or water treatment plants that are not working.
+
+##### This is a water treatment plant in the town of Kintampo that serves about 1000 people:
+
+![Broken tap in home](https://github.com/Jamaderibigbe/Maji-Ndogu-SQL/blob/main/broken%20tap%20in%20home.PNG)
+
+#### An important note on the home taps: 
+About 6-10 million people have running water installed in their homes in Maji Ndogo, including
+broken taps. If we were to document this, we would have a row of data for each home, so that one record is one tap. That means our
+database would contain about 1 million rows of data, which may slow our systems down. For now, the surveyors combined the data of
+many households together into a single record.
+
