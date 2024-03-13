@@ -161,3 +161,7 @@ broken taps. If we were to document this, we would have a row of data for each h
 database would contain about 1 million rows of data, which may slow our systems down. For now, the surveyors combined the data of
 many households together into a single record.
 
+
+## Code
+
+For the first part code, check the [md_water_services_part1.sql](https://github.com/Jamaderibigbe/Maji-Ndogu-SQL/blob/main/md_water_services_part1.sql)
